@@ -1,12 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <>
-    <h1>
-      Page 1
-    </h1>
+      <h1>Page 12</h1>
     </>
   );
 }
