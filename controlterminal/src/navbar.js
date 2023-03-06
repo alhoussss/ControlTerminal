@@ -1,51 +1,18 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import React from "react";
 
-function Navbare() {
-  return (
-    <>
-      <Navbar bg="light">
-        <Container>
-          <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="light">
-        <Container>
-          <Navbar.Brand>Brand text</Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="dark">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            React Bootstrap
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-    </>
-  );
+function Navbar(){
+    return(
+        <>
+        <div class="navbar">
+            <div class="textBox">
+                <div class="textContent">
+                    
+                    <h1 class="h1">GoodFood</h1>
+                    
+                </div>
+            </div>
+        </div>
+        </>
+    )
 }
-
-export default Navbare;
+export default Navbar;

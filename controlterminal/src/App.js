@@ -1,15 +1,39 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Navbare from "./navbar";
+import Accueil from "./Accueil";
+import Navbar from "./Navbar";
+import Menu from "./menu";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 
 function App() {
   return (
     <>
-      <Navbare/>
-      <h1>Page 12</h1>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Card/>}/> 
+        <Route path='/Menu' element={<Menu/>}/> 
+      </Routes>
+    </Router>
+    
     </>
   );
 }
 
+function Card(){
+
+  return(
+
+    <>
+      <div>
+        <Navbar/>
+      </div>
+
+      <div>
+        <Accueil/>
+      </div>
+    </>
+
+  )
+}
 export default App;
