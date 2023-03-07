@@ -2,6 +2,11 @@ import React from "react";
 import Navbar from "./navbar";
 
 function Menu() {
+  let navigate = useNavigate();
+
+  const handleEmporterClick = () => {
+    navigate("/Menu/Burgers");
+  };
   const items = [
     {
       name: "Burgers",
