@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./navbar";
+import { useNavigate } from "react-router-dom";
 
 function Menu() {
   let navigate = useNavigate();
@@ -39,17 +40,17 @@ function Menu() {
         "https://previews.123rf.com/images/angelmaxmixam/angelmaxmixam1601/angelmaxmixam160100056/50819649-fond-d-%C3%A9cran-menu-pour-les-pizzerias-et-restaurants-produits-de-l-image.jpg",
     },
     {
-      name: "Wrapps",
+      name: "Sides",
       image:
         "https://images.unsplash.com/photo-1562059390-a761a084768e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d3JhcHxlbnwwfHwwfHw%3D&w=1000&q=80",
     },
     {
-      name: "Tenders",
+      name: "Kids' Meals",
       image:
-        "https://images.squarespace-cdn.com/content/v1/569119fc1c1210fdda2defba/1589758322371-KHSZ84RTVSO0OGCPEY83/image-asset.jpeg",
+        "https://www.westrock.com/-/media/images/products/folding-carton/stock-box/stockboxkidsmeal-png-c-png.png",
     },
     {
-      name: "Glaces",
+      name: "Sauces",
       image:
         "https://voyage-onirique.com/wp-content/uploads/2019/06/coupe-glaces2.jpg",
     },
@@ -61,8 +62,10 @@ function Menu() {
       <div className="menu">
         {items.map((item, index) => (
           <div className="menu2" key={index}>
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
+            <button className="menu2" onClick={handleEmporterClick}>
+              <img src={item.image} alt={item.name} />
+              <h3>{item.name}</h3>
+            </button>
           </div>
         ))}
       </div>
