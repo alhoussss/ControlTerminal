@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./navbar";
 import { useNavigate } from "react-router-dom";
+import Lists from "./Listsproducts";
 
 function Menu() {
   let navigate = useNavigate();
@@ -52,7 +53,7 @@ function Menu() {
     {
       name: "Sauces",
       image:
-        "https://voyage-onirique.com/wp-content/uploads/2019/06/coupe-glaces2.jpg",
+        "https://www.mashed.com/img/gallery/which-fast-food-restaurant-has-the-best-dipping-sauce-heres-what-mashed-fans-say-exclusive-survey/l-intro-1662132318.jpg",
     },
   ];
 
@@ -68,6 +69,9 @@ function Menu() {
             </button>
           </div>
         ))}
+      </div>
+      <div>
+        <Lists />
       </div>
     </>
   );

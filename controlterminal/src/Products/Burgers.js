@@ -4,6 +4,11 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 
 function Burger() {
+  let navigate = useNavigate();
+
+  const handleEmporterClick = () => {
+    navigate("/Menu/Burgers");
+  };
   const items = [
     {
       name: "Classic Cheeseburger",
@@ -45,9 +50,10 @@ function Burger() {
       <div className="burgers">
         {items.map((item, index) => (
           <div className="burgers2" key={index}>
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
-            <h4>{item.description}</h4>
+            <button className="menu2" onClick={handleEmporterClick}>
+              <img src={item.image} alt={item.name} />
+              <h3>{item.name}</h3>
+            </button>
           </div>
         ))}
       </div>
