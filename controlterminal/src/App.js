@@ -3,6 +3,7 @@ import Accueil from "./Accueil";
 import Navbar from "./Navbar";
 import Menu from "./menu";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Burger from "./Products/Burgers";
 
 
 
@@ -12,7 +13,8 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Card/>}/> 
-        <Route path='/Menu' element={<Menu/>}/> 
+        <Route path='/Menu' element={<Menu/>}/>
+        <Route path='/Menu/Burgers' element={<Burger/>}/>
       </Routes>
     </Router>
     
