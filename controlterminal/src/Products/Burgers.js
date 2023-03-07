@@ -9,7 +9,8 @@ function Burger() {
       name: "Classic Cheeseburger",
       image:
         "https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg",
-      description: "Asdauhdja usdhauid qksd sdjai ba ajd aidha iu ah",
+      description:
+        "A beef patty topped with a slice of cheese, lettuce, tomato and onions.",
     },
     {
       name: "Steakhouse Burger",
