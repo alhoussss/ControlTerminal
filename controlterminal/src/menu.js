@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { useNavigate } from 'react-router-dom';
+import Lists from "./Listsproducts";
 
 function Menu() {
 
@@ -34,6 +35,9 @@ function Menu() {
           </button>
         </div>
       ))}
+    </div>
+    <div>
+         <Lists/> 
     </div>
     </>
   );
