@@ -70,9 +70,6 @@ function Menu() {
           </div>
         ))}
       </div>
-      <div>
-        <Lists />
-      </div>
     </>
   );
 }

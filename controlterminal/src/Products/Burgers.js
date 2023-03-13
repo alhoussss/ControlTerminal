@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../navbar";
 import "../App.css";
-import { useNavigate } from "react-router-dom";
 
 function Burger() {
-  let navigate = useNavigate();
+  const [clickedItems, setClickedItems] = useState([]);
 
-  const handleEmporterClick = () => {
-    navigate("/Menu/Burgers");
+  const handleName = (itemName) => {
+    setClickedItems([...clickedItems, itemName]);
   };
+
   const items = [
     {
       name: "Classic Cheeseburger",
@@ -50,12 +50,21 @@ function Burger() {
       <div className="burgers">
         {items.map((item, index) => (
           <div className="burgers2" key={index}>
-            <button className="menu2" onClick={handleEmporterClick}>
+            <button className="menu2" onClick={() => handleName(item.name)}>
               <img src={item.image} alt={item.name} />
               <h3>{item.name}</h3>
             </button>
           </div>
         ))}
+      </div>
+      <div className="form">
+        <h2 id="heading">Commande</h2>
+        <ul>
+          {clickedItems.map((itemName, index) => (
+            <li className="name" key={index}>{itemName}</li>
+          ))}
+        </ul>
+        <button className="button3">Valider</button>
       </div>
     </>
   );
