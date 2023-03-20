@@ -16,7 +16,6 @@ function App() {
           <Route path="/" element={<Card />} />
           <Route path="/Menu" element={<Menu />} />
           <Route path="/Menu/Burgers" element={<Fries />} />
-          <Route path="/Menu/Drinks" element={<Drinks />} />
         </Routes>
       </Router>
     </>
