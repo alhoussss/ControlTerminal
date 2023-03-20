@@ -54,11 +54,10 @@ function Fries() {
         "A hamburger patty made with soybeans, tofu, nuts and grains, a slice of cheddar cheese, fresh lettuce, tomato, pickles and a tasty béarnaise sauce",
     },
   ];
-  return(
+  return (
     <>
-    <Burger data={frites}/>
+      <Burger data={frites} />
     </>
-  )
+  );
 }
 export default Fries;
-
