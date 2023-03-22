@@ -55,8 +55,9 @@ function Salads() {
     },
   ];
   return (
-    <>
-      <Burger data={salad} />
-    </>
+    <div>
+      <Burger items={salad} />
+    </div>
   );
 }
+export default Salads;

@@ -10,4 +10,10 @@ function Sauces() {
   const handleEmporterClick = () => {
     navigate("/Menu/Sauces");
   };
+  return (
+    <div>
+      <Burger items={sauces} />
+    </div>
+  );
 }
+export default Sauces;

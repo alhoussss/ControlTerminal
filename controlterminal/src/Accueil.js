@@ -8,11 +8,11 @@ function Accueil() {
   let navigate = useNavigate();
 
   const handleEmporterClick = () => {
-    navigate('/Menu');
+    navigate('/Subscribe');
   }
 
   const handleSurPlaceClick = () => {
-    navigate('/Menu');
+    navigate('/Subscribe');
   }
 
   return (

@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Bootstrap/navbar";
 import "../App.css";
 
-function Burger({ image, name, description }) {
-  const [clickedItems, setClickedItems] = useState([]);
 
-  const handleName = (itemName) => {
-    setClickedItems([...clickedItems, itemName]);
-  };
 
   const items = [
     {
@@ -54,33 +49,45 @@ function Burger({ image, name, description }) {
     },
   ];
 
-  return (
-    <>
-      <Navbar />
-      <div className="burgers">
-        {items.map((item, index) => (
-          <div className="burgers2" key={index}>
-            <button className="menu2" onClick={() => handleName(item.name)}>
-              <img src={item.image} alt={item.name} />
-              <h3>{item.name}</h3>
-              <h4>{item.description}</h4>
-            </button>
-          </div>
-        ))}
-      </div>
-      <div className="form">
-        <h2 id="heading">Commande</h2>
-        <ul>
-          {clickedItems.map((itemName, index) => (
-            <li className="name" key={index}>
-              {itemName}
-            </li>
-          ))}
-        </ul>
-        <button className="button3">Valider</button>
-      </div>
-    </>
-  );
-}
-
-export default Burger;
+  function Burger({ items }) {
+    const [clickedItems, setClickedItems] = useState([]);
+  
+    const handleName = (itemName) => {
+      setClickedItems([...clickedItems, itemName]);
+    };
+  
+    return (
+      <>
+        <Navbar />
+        <div className="burgers">
+          {items && items.length > 0 ? (
+            items.map((item, index) => (
+              <div className="burgers2" key={index}>
+                <button className="menu2" onClick={() => handleName(item.name)}>
+                  <img src={item.image} alt={item.name} />
+                  <h3>{item.name}</h3>
+                  <h4>{item.description}</h4>
+                </button>
+              </div>
+            ))
+          ) : (
+            <p>No items to display.</p>
+          )}
+        </div>
+        <div className="form">
+          <h2 id="heading">Commande</h2>
+          <ul>
+            {clickedItems.map((itemName, index) => (
+              <li className="name" key={index}>
+                {itemName}
+              </li>
+            ))}
+          </ul>
+          <button className="button3">Valider</button>
+        </div>
+      </>
+    );
+  }
+  
+  export default Burger;
+  

@@ -51,9 +51,9 @@ function Drinks() {
     },
   ];
   return (
-    <>
-      <Burger data={drink} />
-    </>
+    <div>
+      <Burger items={drink} />
+    </div>
   );
 }
 export default Drinks;

@@ -10,4 +10,10 @@ function Sides() {
   const handleEmporterClick = () => {
     navigate("/Menu/Sides");
   };
+  return (
+    <div>
+      <Burger items={sides} />
+    </div>
+  );
 }
+export default Sides;

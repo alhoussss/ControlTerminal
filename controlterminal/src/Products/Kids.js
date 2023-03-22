@@ -10,4 +10,10 @@ function KidsMeals() {
   const handleEmporterClick = () => {
     navigate("/Menu/KidsMeals");
   };
+  return (
+    <div>
+      <Burger items={kidsmeals} />
+    </div>
+  );
 }
+export default KidsMeals;

@@ -10,4 +10,10 @@ function Menus() {
   const handleEmporterClick = () => {
     navigate("/Menu/Menus");
   };
+  return (
+    <div>
+      <Burger items={menus} />
+    </div>
+  );
 }
+export default Menus;

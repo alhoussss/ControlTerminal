@@ -55,9 +55,9 @@ function Desserts() {
     },
   ];
   return (
-    <>
-      <Burger data={dessert} />
-    </>
+    <div>
+      <Burger items={dessert} />
+    </div>
   );
 }
 export default Desserts;
