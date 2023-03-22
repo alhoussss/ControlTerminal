@@ -5,6 +5,8 @@ import Menu from "./menu";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Burger from "./Products/Burgers";
 import Fries from "./Products/Fries";
+import Desserts from "./Products/Desserts";
+import Drinks from "./Products/Drinks";
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Card />} />
           <Route path="/Menu" element={<Menu />} />
-          <Route path="/Menu/Fries" element={<Fries />} />
+          <Route path="/Menu/Burgers" element={<Fries />} />
         </Routes>
       </Router>
     </>

@@ -1,15 +1,9 @@
 import React from "react";
-import Navbar from "../Bootstrap/navbar";
 import "../App.css";
-import { useNavigate } from "react-router-dom";
 import Burger from "./Burgers";
 
 function Fries() {
-  let navigate = useNavigate();
 
-  const handleEmporterClick = () => {
-    navigate("/Menu/Fries");
-  };
   const frites = [
     {
       name: "Classic Cheeseburger",
@@ -54,11 +48,10 @@ function Fries() {
         "A hamburger patty made with soybeans, tofu, nuts and grains, a slice of cheddar cheese, fresh lettuce, tomato, pickles and a tasty béarnaise sauce",
     },
   ];
-  return(
-    <>
-    <Burger frites={frites}/>
-    </>
-  )
+  return (
+    <div>
+      <Burger items={frites} />
+    </div>
+  );
 }
 export default Fries;
-
