@@ -56,7 +56,7 @@ function Fries() {
   ];
   return(
     <>
-    <Burger data={frites}/>
+    <Burger frites={frites}/>
     </>
   )
 }
