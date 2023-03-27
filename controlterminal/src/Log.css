@@ -2,7 +2,7 @@
     position: relative;
   }
   
-  .form {
+  .forms {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -26,9 +26,10 @@
     border-radius: 20px;
     position:absolute;
     margin-left: 40%;
+    margin-top: 10%;
   }
   
-  .form p {
+  .forms p {
     padding-bottom: 20px;
     font-size: 24px;
     font-weight: bold;

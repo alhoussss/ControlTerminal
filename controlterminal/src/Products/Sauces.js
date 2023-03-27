@@ -54,7 +54,7 @@ function Sauces() {
   ];
   return (
     <div>
-      <Burger items={sauces} />
+      <Burger items={sauce} />
     </div>
   );
 }

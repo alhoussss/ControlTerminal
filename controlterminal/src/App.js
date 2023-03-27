@@ -24,6 +24,7 @@ function App() {
           <Route path="/" element={<Card />} />
           <Route path="/Subscribe" element={<Subscribe />} />
           <Route path="/Subscribe/LogIn" element={<LogIn />} />
+          <Route path="/Subscribe/LogIn/Menu" element={<Menu />} />
           <Route path="/Subscribe/Menu" element={<Menu />} />
           <Route path="/Subscribe/Menu/Burgers"  element={<Burger/>} />
           <Route path="/Subscribe/Menu/Fries" element={<Fries />} />

@@ -332,7 +332,7 @@ h4{
  /*ProductsLists*/
 
  .form {
-  top: 17%;
+  top: 25%;
   float: left;
   position: absolute;
   left:   -1%;
@@ -344,6 +344,7 @@ h4{
   padding-bottom: 0.4em;
   background-color: #110d36;
   border-radius: 20px;
+  margin-left: 10%;
 }
 
 #heading {
