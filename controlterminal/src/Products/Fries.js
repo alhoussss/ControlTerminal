@@ -1,13 +1,13 @@
 import React from "react";
 import "../App.css";
-import Burger from "./Burgers";
+import Burger from "./Articles";
 
 function Fries() {
 
   const frites = [
     {
       name: "Classic Cheeseburger",
-      prix: 7,
+      price: 7,
       image:
         "https://assets.afcdn.com/recipe/20130823/63524_w1024h768c1cx2451cy1872.webp",
       description:

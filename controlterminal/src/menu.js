@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Bootstrap/navbar";
 import { useNavigate } from "react-router-dom";
-import Lists from "./Listsproducts";
+
 
 function Menu() {
   let navigate = useNavigate();
@@ -14,7 +14,7 @@ function Menu() {
       name: "Burgers",
       image:
         "https://www.forceetsaveur.com/wp-content/uploads/2019/10/food-burger-wallpaper-preview.jpg",
-      path: "/Subscribe/Menu/burgers",
+      path: "/Subscribe/Menu/Burgers",
     },
     {
       name: "Fries",

@@ -1,15 +1,9 @@
 import React from "react";
-import Navbar from "../Bootstrap/navbar";
 import "../App.css";
-import { useNavigate } from "react-router-dom";
-import Burger from "./Burgers";
+import Burger from "./Articles";
 
 function Drinks() {
-  let navigate = useNavigate();
 
-  const handleEmporterClick = () => {
-    navigate("/Menu/Drinks");
-  };
   const drink = [
     {
       name: "Cola",
