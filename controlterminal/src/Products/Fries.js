@@ -3,55 +3,54 @@ import "../App.css";
 import Burger from "./Articles";
 
 function Fries() {
-
   const frites = [
     {
-      name: "Classic Cheeseburger",
-      price: 7,
-      image:
-        "https://assets.afcdn.com/recipe/20130823/63524_w1024h768c1cx2451cy1872.webp",
-      description:
-        "A juicy beef patty topped with a slice of cheese, lettuce, fresh tomato and onions",
-    },
-    {
-      name: "Steakhouse Burger",
+
+      name: "Classic French Fries",
       prix: 7,
       image:
-        "https://whisk-res.cloudinary.com/image/upload/g_auto,g_auto,c_fill,q_60,f_auto,h_600,w_800/v1630523299/recipe/a32ea69b366fd28012381f8eef6cf124.jpg",
+        "https://www.nutmegnanny.com/wp-content/uploads/2021/02/garlic-parmesan-air-fryer-french-fries-6.jpg.webp",
       description:
-        "A juicy beef patty topped with bacon, fresh tomato, melted cheese, onions, lettuce, mayonnaise and a deep smoky BBQ sauce",
+        "Are you looking for a description for french fries? Well then ours are simply of the highest quality !",
     },
     {
-      name: "Crispy Chicken Burger",
+      name: "Tex Mex Fries",
       prix: 7,
       image:
-        "https://gofry.com.fj/wp-content/uploads/2019/04/Chicken_Burger-scaled-e1624614963511.jpg",
+        "https://www.thefoodjoy.com/wp-content/uploads/2019/08/cheese-fries-3.jpg",
       description:
-        "A juicy, buttermilk-marinated chicken breast, topped with a slice of cheddar cheese, mayonnaise and fresh tomato and lettuce",
+        "French fries topped with our special cheddar sauce, fried onions, bacon and thinly sliced leeks",
     },
     {
-      name: "Chicken Louisiane Burger",
+      name: "Onion Rings",
       prix: 7,
       image:
-        "https://lh3.googleusercontent.com/UpTFaZAgYxeI3lJUaPo1MVGgIApZ1w-v6ko6HmaHf4Eo5vSDdw474JkfNfnJp7anrNAEL8lOA1Lhp36MMLQo8ydsKIUxo4fNMsqyBRs=w512-rw",
-      description:
-        "Crispy breaded chicken topped with cheddar cheese, smoked bacon, cripsy onions , fresh lettuce, tomato, finished with a delicious cajun-style spicy sauce",
+        "https://natashaskitchen.com/wp-content/uploads/2022/06/Onion-Rings-Recipe-5.jpg",
+      description: "Onion rings made with love",
     },
     {
-      name: "Swiss Mushroom Burger",
+      name: "Curly Fries'",
       prix: 7,
       image:
-        "https://www.fastfoodpost.com/wp-content/uploads/2022/10/Applebees-Adds-New-Bourbon-Street-Mushroom-Swiss-Burger-New-Neighborhood-Double-Burger-And-New-Cinnabon-Mini-Swirls.jpg",
+        "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/7ca9b307befa43d3b29d510997c50430/bfv8713_Curly_Fries-FB1080.jpg?resize=1200:*",
       description:
-        "Deliciously seasoned ground beef topped with Swiss Cheese, white mushrooms and a ravishing Worcestershire sauce",
+        "They are not just curly, they're seasoned with the best combination possible of salt, paprika, cumin and garlic powder",
     },
     {
-      name: "Veggie Burger",
+      name: "Sweet Potato Fries",
       prix: 7,
       image:
-        "https://assets.bonappetit.com/photos/57acae2d1b33404414975121/4:3/w_3235,h_2426,c_limit/ultimate-veggie-burger.jpg",
+        "https://debraklein.com/wp-content/uploads//2017/01/Sweet-Potato-Fries-14.jpg",
       description:
-        "A hamburger patty made with soybeans, tofu, nuts and grains, a slice of cheddar cheese, fresh lettuce, tomato, pickles and a tasty béarnaise sauce",
+        "A variant of potato chips produced using sweet potatoes instead of white potatoes. The healthier option",
+    },
+    {
+      name: "Potato Wedges",
+      prix: 7,
+      image:
+        "https://www.indianhealthyrecipes.com/wp-content/uploads/2020/10/potato-wedges-recipe.jpg",
+      description:
+        "Salt, pepper and paprika are the special ingredients for these amazing wedges",
     },
   ];
   return (

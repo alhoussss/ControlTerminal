@@ -8,7 +8,7 @@ function Drinks() {
     {
       name: "Cola",
       image:
-        "https://www.artofdrink.com/wp-content/uploads/2010/11/homemade-cola-recipe.jpg",
+        "https://cdn.cdkitchen.com/recipes/images/2017/12/17821-8022-mx.jpg",
       description: "Homemade Cola, our own special recipe",
     },
     {
