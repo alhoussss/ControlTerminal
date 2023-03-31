@@ -4,7 +4,7 @@ import "../src/CssFiles/Receive.css";
 function Receive(){
     return(
         <div className="cardR">
-            <h2></h2>
+            <h2> Rien pour le moment</h2>
         </div>
     )
 }

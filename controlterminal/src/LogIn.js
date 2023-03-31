@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Log.css";
 import { useNavigate } from "react-router-dom";
+import Admin from "./Admin";
 
 function LogIn(){
     let navigate = useNavigate();
@@ -20,7 +21,13 @@ function LogIn(){
     }
 
     return(
-        <>
+       
+        email == "admin" & password == "admin" ?(
+            <>
+            <Admin/>
+            </>
+        ): (
+        
         <form className="forms" onSubmit={handleSubmit}>
             <p>Login</p>
             <div className="group">
@@ -36,8 +43,8 @@ function LogIn(){
                 </div>
             </div>
             <button className="submit" disabled={!email || !password}>submit</button>
-        </form>
-        </>
+        </form>)
+        
     )
 }
 

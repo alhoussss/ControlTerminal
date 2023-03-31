@@ -13,7 +13,7 @@ import Sauces from "./Products/Sauces";
 import Sides from "./Products/Sides";
 import Menus from "./Products/Menus";
 import Subscribe from "./Identification";
-import LogIn from "./Inscription";
+import LogIn from "./LogIn";
 import Receive from "./Receive";
 import Burgers from "./Products/Burgers";
 
