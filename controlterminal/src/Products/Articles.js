@@ -5,7 +5,7 @@ import "../Receive";
 import { useNavigate } from "react-router-dom";
 
 
-
+export const PriceContext = React.createContext();
 
 function Burger({ items }){
   const [clickedItems, setClickedItems] = useState([])
@@ -36,6 +36,7 @@ function Burger({ items }){
   
   return(
     <>
+      <PriceContext.Provider value={clickedItems}>
         <Navbar />
               <div className="burgers">
                 {items && items.length > 0 ? (
@@ -82,8 +83,17 @@ function Burger({ items }){
                 </div>
                 <button className="button3"onClick={() => navigate("/Subscribe/Menu/burgers/Receive")}>Valider</button>
               </div>
+      </PriceContext.Provider>
     </>
   )
+}
+function Receive(){
+    const value = React.useContext(PriceContext); 
+    return(
+        <div className="cardR">
+            <h2>{value}</h2>
+        </div>
+    )
 }
 export default Burger;
   
