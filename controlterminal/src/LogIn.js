@@ -41,7 +41,12 @@ function LogIn(){
                     <span className="highlight-span"></span>
                     <label className="label-email">password</label>
                 </div>
-            </div>
+            </div><br/>
+            <label class="checkbox">
+                <a>I agree to the</a> <a href="#">terms and conditions</a>
+                <input type="checkbox"/>
+                    
+            </label>
             <button className="submit" disabled={!email || !password}>submit</button>
         </form>)
         
