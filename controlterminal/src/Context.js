@@ -11,7 +11,7 @@ function Context(props){
     
     return(
 
-        <NewContext.Provider value={{Valeur,setValeur}}>
+        <NewContext.Provider value={{Valeur,setValeur:(Valeurs)=>setValeur([...Valeur,Valeurs])}}>
             
            
           {props.children}

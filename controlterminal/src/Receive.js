@@ -9,9 +9,13 @@ import { NewContext } from "./Context";
 function Receive(){
     const valeur = React.useContext(NewContext);
     return(
+        <>
+         <h1 id="head">Receipt</h1>
         <div className="cardR">
-            <h2> {valeur.Valeur} </h2>
+           
+            <p> {valeur.Valeur} </p>
         </div>
+        </>
     )
 }
 export default Receive

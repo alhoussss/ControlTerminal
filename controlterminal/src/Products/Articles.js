@@ -59,7 +59,7 @@ function Burger({ items }){
                 <ul>
                   {clickedItems.map((itemName, index) => (
                     <li className="name" key={index}>
-                      {itemName}-{items.find(element => element.name === itemName).price}$
+                      <p>{itemName}-{items.find(element => element.name === itemName).price}$
                       <button1 className="tooltip" onClick={() => handleRemove(index)}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" height="15" width="15">
                           <path fill="#6361D9" d="M8.78842 5.03866C8.86656 4.96052 8.97254 4.91663 9.08305 4.91663H11.4164C11.5269
@@ -75,6 +75,7 @@ function Burger({ items }){
                         </svg>
                         <span className="tooltiptext">remove</span>
                       </button1>
+                      </p>
                     </li>
                   ))}
                   </ul>
@@ -83,6 +84,7 @@ function Burger({ items }){
                   <h1 style={{ color: "white" }}>Total: {getTotalPrice().toFixed(2)}$</h1>
                 </div>
                 <button className="button3"onClick={() => {valeur.setValeur(clickedItems);navigate("/Subscribe/Menu/burgers/Receive")}}>Valider</button>
+                <button className="button3"onClick={() => {valeur.setValeur(clickedItems);navigate("/Subscribe/Menu")}}>Continuer</button>
               </div>
               
       

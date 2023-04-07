@@ -1,6 +1,6 @@
 .cardR {
-    width: 190px;
-    height: 254px;
+    width: 500px;
+    height: 500px;
     background: #07182E;
     position: relative;
     display: flex;
@@ -9,14 +9,21 @@
     overflow: hidden;
     border-radius: 20px;
     position: relative;
-    margin-left: 45%;
-    margin-top: 20%;
+    margin-left: 35%;
+    margin-top: 10%;
   }
   
-  .cardR h2 {
+  .cardR p {
     z-index: 1;
     color: white;
     font-size: 2em;
+  }
+  #head {
+    margin-bottom: 10%;
+    text-align: center;
+    margin: 2em;
+    color: rgb(0, 255, 200);
+    font-size: 1.2em;
   }
   
   .cardR::before {
