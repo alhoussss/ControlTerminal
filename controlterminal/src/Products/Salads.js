@@ -13,6 +13,7 @@ function Salads() {
   const salad = [
     {
       name: "Chicken Ceasar Salad",
+      price: 8.99,
       image:
         "https://thewoodenskillet.com/wp-content/uploads/2021/08/grilled-chicken-caesar-salad-recipe-1.jpg",
       description:
@@ -20,6 +21,7 @@ function Salads() {
     },
     {
       name: "Greek Salad",
+      price: 6.99,
       image:
         "https://www.simplyrecipes.com/thmb/hcdnhU89fQgsmMkeppMwHx4TKnk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2011__08__dads-greek-salad-horiz-a-1600-bc71b85bc907414a9bb3179a923b58fc.jpg",
       description:
@@ -27,6 +29,7 @@ function Salads() {
     },
     {
       name: "Pasta Salad",
+      price: 6.99,
       image:
         "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2Fbd5bbcce40edf5ea5bf0d8210b1c742db491c5e6",
       description:
@@ -34,6 +37,7 @@ function Salads() {
     },
     {
       name: "Salade Nicoise",
+      price: 7.99,
       image:
         "https://www.simplyrecipes.com/thmb/P1zvV395CKAZSOj6QKbK7u46fgQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Nicoise-Salad-LEAD-10-142a737d4d3541f28c5bc330355b2f65.jpg",
       description:
@@ -41,6 +45,7 @@ function Salads() {
     },
     {
       name: "Coleslaw",
+      price: 4.99,
       image:
         "https://www.simplyrecipes.com/thmb/zo53Nx9Z_E7xDmH80Ew5Q-icyAI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Classic-Coleslaw-LEAD-2-cf660416c9fa4bbb83b40bfcabb1d106.jpg",
       description:
@@ -48,6 +53,7 @@ function Salads() {
     },
     {
       name: "Tabbouleh",
+      price: 5.99,
       image:
         "https://www.twopeasandtheirpod.com/wp-content/uploads/2012/09/Tabbouleh-Salad-500x427.jpg",
       description:
