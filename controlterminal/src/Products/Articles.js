@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import Navbar from "../Bootstrap/navbar";
 import "../App.css";
 import "../Receive";
 import { useNavigate } from "react-router-dom";
-
-
+import { NewContext } from "../Context";
 
 
 function Burger({ items }){
+
+  const valeur = React.useContext(NewContext);
   const [clickedItems, setClickedItems] = useState([])
   const navigate = useNavigate()
 
@@ -36,7 +37,7 @@ function Burger({ items }){
   
   return(
     <>
-  
+      
         <Navbar />
               <div className="burgers">
                 {items && items.length > 0 ? (
@@ -81,8 +82,9 @@ function Burger({ items }){
                   <hr />
                   <h1 style={{ color: "white" }}>Total: {getTotalPrice().toFixed(2)}$</h1>
                 </div>
-                <button className="button3"onClick={() => navigate("/Subscribe/Menu/burgers/Receive")}>Valider</button>
+                <button className="button3"onClick={() => {valeur.setValeur(clickedItems);navigate("/Subscribe/Menu/burgers/Receive")}}>Valider</button>
               </div>
+              
       
     </>
   );

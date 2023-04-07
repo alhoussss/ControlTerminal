@@ -16,13 +16,15 @@ import Subscribe from "./Identification";
 import LogIn from "./LogIn";
 import Receive from "./Receive";
 import Burgers from "./Products/Burgers";
+import Context from "./Context";
 
 
 function App() {
   return (
     <>
       <Router>
-        <Routes>
+        <Context>
+          <Routes>
           <Route path="/" element={<Card />} />
           <Route path="/Subscribe" element={<Subscribe />} />
           <Route path="/Subscribe/LogIn" element={<LogIn />} />
@@ -40,6 +42,8 @@ function App() {
           <Route path="/Subscribe/Menu/Menus" element={<Menus/>} />
           <Route path="/Subscribe/Menu/burgers/Receive" element={<Receive/>} />
         </Routes>
+        </Context>
+        
       </Router>
     </>
   );
