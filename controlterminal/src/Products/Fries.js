@@ -5,9 +5,8 @@ import Burger from "./Articles";
 function Fries() {
   const frites = [
     {
-
       name: "Classic French Fries",
-      prix: 7,
+      price: 7,
       image:
         "https://www.nutmegnanny.com/wp-content/uploads/2021/02/garlic-parmesan-air-fryer-french-fries-6.jpg.webp",
       description:
@@ -15,7 +14,7 @@ function Fries() {
     },
     {
       name: "Tex Mex Fries",
-      prix: 7,
+      price: 7,
       image:
         "https://www.thefoodjoy.com/wp-content/uploads/2019/08/cheese-fries-3.jpg",
       description:
@@ -23,14 +22,14 @@ function Fries() {
     },
     {
       name: "Onion Rings",
-      prix: 7,
+      price: 7,
       image:
         "https://natashaskitchen.com/wp-content/uploads/2022/06/Onion-Rings-Recipe-5.jpg",
       description: "Onion rings made with love",
     },
     {
       name: "Curly Fries'",
-      prix: 7,
+      price: 7,
       image:
         "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/7ca9b307befa43d3b29d510997c50430/bfv8713_Curly_Fries-FB1080.jpg?resize=1200:*",
       description:
@@ -38,7 +37,7 @@ function Fries() {
     },
     {
       name: "Sweet Potato Fries",
-      prix: 7,
+      price: 7,
       image:
         "https://debraklein.com/wp-content/uploads//2017/01/Sweet-Potato-Fries-14.jpg",
       description:
@@ -46,7 +45,7 @@ function Fries() {
     },
     {
       name: "Potato Wedges",
-      prix: 7,
+      price: 7,
       image:
         "https://www.indianhealthyrecipes.com/wp-content/uploads/2020/10/potato-wedges-recipe.jpg",
       description:
