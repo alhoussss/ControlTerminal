@@ -14,7 +14,7 @@ import Sides from "./Products/Sides";
 import Menus from "./Products/Menus";
 import Subscribe from "./Identification";
 import LogIn from "./LogIn";
-import Receive from "./Receive";
+import Receive from "./Receipt";
 import Burgers from "./Products/Burgers";
 import Context from "./Context";
 

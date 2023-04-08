@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import Burger, {Receive, UserPrice} from "./Products/Articles"
+
 
 
 
@@ -7,7 +7,7 @@ export const NewContext = createContext()
 
 function Context(props){
 
-    const [Valeur, setValeur] = useState()
+    const [Valeur, setValeur] = useState([])
     
     return(
 

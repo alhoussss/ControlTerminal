@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Log.css";
 import { useNavigate } from "react-router-dom";
-import Admin from "./Admin";
+import Administrator from "./AdminAccess";
 
 function LogIn(){
     let navigate = useNavigate();
@@ -24,7 +24,7 @@ function LogIn(){
        
         email == "admin" & password == "admin" ?(
             <>
-            <Admin/>
+            <Administrator/>
             </>
         ): (
         

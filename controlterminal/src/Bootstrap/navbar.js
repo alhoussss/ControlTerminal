@@ -1,15 +1,17 @@
 import React from "react";
+import "./Navbar.css"
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate()
   return (
     <>
-      <div className="navbar">
-        <div className="textBox">
-          <div className="textContent">
-            <h1 className="h1">GoodFood</h1>
-          </div>
-        </div>
-      </div>
+      <button className="button" onClick={() => navigate("/")}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> <h2>GoodFood</h2>
+      </button>
     </>
   );
 }

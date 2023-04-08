@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 import Navbar from "../Bootstrap/navbar";
 import "../App.css";
-import "../Receive";
+import "../Receipt";
 import { useNavigate } from "react-router-dom";
 import { NewContext } from "../Context";
 

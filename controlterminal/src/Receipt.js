@@ -1,8 +1,8 @@
 import React from "react";
 import "../src/CssFiles/Receive.css";
 import { NewContext } from "./Context";
+import Navbar from "./Bootstrap/navbar";
 
-<<<<<<< HEAD
 
 
 
@@ -11,21 +11,17 @@ function Receive(){
     const valeur = React.useContext(NewContext);
     return(
         <>
+        <Navbar/>
          <h1 id="head">Receipt</h1>
         <div className="cardR">
            
-            <p> {valeur.Valeur} </p>
+            <ul>
+                <li>
+                    {valeur.Valeur}
+                </li>
+            </ul>  
         </div>
         </>
     )
-=======
-function Receive() {
-  const valeur = React.useContext(NewContext);
-  return (
-    <div className="cardR">
-      <h2> {valeur.Valeur} </h2>
-    </div>
-  );
->>>>>>> d03419a31f334f586d1b3c1724c40717e074f9c7
 }
 export default Receive;
