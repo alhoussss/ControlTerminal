@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./Log.css";
 import { useNavigate } from "react-router-dom";
 import Administrator from "./AdminAccess";
+import { UserContext } from "react";
 
 function LogIn(){
+    /*const user = React.useContext(UserContext);*/
     let navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -41,13 +43,8 @@ function LogIn(){
                     <span className="highlight-span"></span>
                     <label className="label-email">password</label>
                 </div>
-            </div><br/>
-            <label class="checkbox">
-                <a>I agree to the</a> <a href="#">terms and conditions</a>
-                <input type="checkbox"/>
-                    
-            </label>
-            <button className="submit" disabled={!email || !password}>submit</button>
+            </div>
+            <button className="submit" /*onClick={() => {user.setValeur2(email)}}*/ disabled={!email || !password}>submit</button>
         </form>)
         
     )

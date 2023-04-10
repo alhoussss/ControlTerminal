@@ -83,8 +83,8 @@ function Burger({ items }){
                   <hr />
                   <h1 style={{ color: "white" }}>Total: {getTotalPrice().toFixed(2)}$</h1>
                 </div>
-                <button className="button3"onClick={() => {valeur.setValeur(clickedItems);navigate("/Subscribe/Menu/burgers/Receive")}}>Valider</button>
-                <button className="button3"onClick={() => {valeur.setValeur(clickedItems);navigate("/Subscribe/Menu")}}>Continuer</button>
+                <button className="button3"onClick={() => {valeur.setValeur(clickedItems.map((list, index) => (<ul key={index}><li>{list}-{items.find(element => element.name === list).price}$</li></ul>)));navigate("/Subscribe/Menu/burgers/Receive")}}>Valider</button>
+                <button className="button3"onClick={() => {valeur.setValeur(clickedItems.map((list, index) => (<ul key={index}><li>{list}-{items.find(element => element.name === list).price}$</li></ul>)));navigate("/Subscribe/Menu")}}>Continuer</button>
               </div>
               
       

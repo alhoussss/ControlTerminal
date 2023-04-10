@@ -13,14 +13,11 @@ function Administrator(){
         <>
         <Navbar/>
          <h1 id="head">Orders</h1>
-        <div className="cardR">
-           
-            <ul>
-                <li>
-                    {order.Valeur}
-                </li>
-            </ul>  
-        </div>
+         <div className="cardR">
+                <h4>
+                    {order.Valeur}  
+                </h4>
+            </div>
         </>
     )
 }
