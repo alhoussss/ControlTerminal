@@ -4,6 +4,7 @@ import "../App.css";
 import "../Receipt";
 import { useNavigate } from "react-router-dom";
 import { NewContext } from "../Context";
+import Move from "../Move";
 
 
 function Burger({ items }){
@@ -37,7 +38,7 @@ function Burger({ items }){
   
   return(
     <>
-      
+      <div><Move/></div>
         <Navbar />
               <div className="burgers">
                 {items && items.length > 0 ? (
