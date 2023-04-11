@@ -1,6 +1,6 @@
 .Button {
     padding: 0;
-    margin: 0;
+    margin-left: 95%;
     border: none;
     background: none;
   }
@@ -49,9 +49,7 @@
     width: 100%;
   }
   
-  .Button:hover p::before {
-    width: 100%;
-  }
+
   
   .Button:hover svg {
     transform: translateX(4px);
@@ -59,6 +57,74 @@
   }
   
   .Button svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
+
+  /*Buttons*/
+
+  .Buttons {
+    padding: 0;
+    margin-left: 1%;
+    border: none;
+    background: none;
+  }
+  
+  .Buttons{
+    --primary-color: #ffffff;
+    --hovered-color:linear-gradient( #00ff75 0%, #3700ff 100%);
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .Buttons p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color)
+  }
+  
+  .Buttons::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .Buttons p::before {
+    position: absolute;
+  /*   box-sizing: border-box; */
+    content: "Subscribe";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  .Buttons:hover::after {
+    width: 100%;
+  }
+  
+
+  
+  .Buttons:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color)
+  }
+  
+  .Buttons svg {
     color: var(--primary-color);
     transition: 0.2s;
     position: relative;
