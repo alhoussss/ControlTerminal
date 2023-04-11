@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.css";
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Bootstrap/navbar';
+import Move from './Move';
 
 
 
@@ -18,6 +19,7 @@ function Accueil() {
 
   return (
     <>
+    <div><Move/></div>
     <div>
         <Navbar/>
     </div>

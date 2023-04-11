@@ -17,12 +17,14 @@ import LogIn from "./LogIn";
 import Receive from "./Receipt";
 import Burgers from "./Products/Burgers";
 import Context from "./Context";
+import UsersContext from "./UserContext";
 
 
 function App() {
   return (
     <>
       <Router>
+        <UsersContext>
         <Context>
           <Routes>
           <Route path="/" element={<Card />} />
@@ -43,7 +45,7 @@ function App() {
           <Route path="/Subscribe/Menu/burgers/Receive" element={<Receive/>} />
         </Routes>
         </Context>
-        
+        </UsersContext>
       </Router>
     </>
   );

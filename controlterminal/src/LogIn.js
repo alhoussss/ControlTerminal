@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./Log.css";
 import { useNavigate } from "react-router-dom";
 import Administrator from "./AdminAccess";
-import { UserContext } from "react";
+import { UserContext } from "./UserContext";
 
 function LogIn(){
-    /*const user = React.useContext(UserContext);*/
+    const user = React.useContext(UserContext);
     let navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -44,7 +44,7 @@ function LogIn(){
                     <label className="label-email">password</label>
                 </div>
             </div>
-            <button className="submit" /*onClick={() => {user.setValeur2(email)}}*/ disabled={!email || !password}>submit</button>
+            <button className="submit" onClick={() => {user.setValeur2(email)}} disabled={!email || !password}>submit</button>
         </form>)
         
     )

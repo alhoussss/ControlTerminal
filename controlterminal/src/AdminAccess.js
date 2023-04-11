@@ -14,7 +14,7 @@ function Administrator(){
         <Navbar/>
          <h1 id="head">Orders</h1>
          <div className="cardR">
-                <h4>
+                <h4 contentEditable="true">
                     {order.Valeur}  
                 </h4>
             </div>
