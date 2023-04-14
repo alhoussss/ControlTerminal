@@ -5,7 +5,7 @@ function Move(){
     return(
         <>
         <div>
-        <button className="Buttons" onClick={}> 
+        <button className="Buttons"> 
             
             <p>Back</p>
            

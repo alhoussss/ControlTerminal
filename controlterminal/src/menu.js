@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Bootstrap/navbar";
 import { useNavigate } from "react-router-dom";
+import Profil from "./Profil";
 
 
 function Menu() {
@@ -69,6 +70,7 @@ function Menu() {
   return (
     <>
       <Navbar />
+      <Profil/>
       <div className="menu">
         {items.map((item, index) => (
           <div className="menu2" key={index}>

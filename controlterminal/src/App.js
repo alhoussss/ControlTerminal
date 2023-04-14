@@ -18,34 +18,43 @@ import Receive from "./Receipt";
 import Burgers from "./Products/Burgers";
 import Context from "./Context";
 import UsersContext from "./UserContext";
+import Profil from "./Profil";
+import ProfilContext  from "./Profilcontext";
+import Photos from "./Users";
+import PhotossContext from "./Photocontext";
 
 
 function App() {
   return (
     <>
       <Router>
+        <PhotossContext>
+        <ProfilContext>
         <UsersContext>
-        <Context>
-          <Routes>
-          <Route path="/" element={<Card />} />
-          <Route path="/Subscribe" element={<Subscribe />} />
-          <Route path="/Subscribe/LogIn" element={<LogIn />} />
-          <Route path="/Subscribe/LogIn/Menu" element={<Menu />} />
-          <Route path="/Subscribe/Menu" element={<Menu />} />
-          <Route path="/Subscribe/Menu/Burgers"  element={<Burgers/>} />
-          <Route path="/Subscribe/Menu/Burgers"  element={<Burger/>} />
-          <Route path="/Subscribe/Menu/Fries" element={<Fries />} />
-          <Route path="/Subscribe/Menu/Drinks" element={<Drinks />} />
-          <Route path="/Subscribe/Menu/Desserts" element={<Desserts />} />
-          <Route path="/Subscribe/Menu/KidsMeals" element={<KidsMeals />} />
-          <Route path="/Subscribe/Menu/Salads" element={<Salads />} />
-          <Route path="/Subscribe/Menu/Sauces" element={<Sauces />} />
-          <Route path="/Subscribe/Menu/Sides" element={<Sides />} />
-          <Route path="/Subscribe/Menu/Menus" element={<Menus/>} />
-          <Route path="/Subscribe/Menu/burgers/Receive" element={<Receive/>} />
-        </Routes>
-        </Context>
+          <Context>
+            <Routes>
+              <Route path="/" element={<Card />} />
+              <Route path="/Subscribe" element={<Subscribe />} />
+              <Route path="/Subscribe/LogIn" element={<LogIn />} />
+              <Route path="/Subscribe/LogIn/Menu" element={<Menu />} />
+              <Route path="/Subscribe/LogIn/Menu/Myprofil" element={<Photos />} />
+              <Route path="/Subscribe/Menu" element={<Menu />} />
+              <Route path="/Subscribe/Menu/Burgers"  element={<Burgers/>} />
+              <Route path="/Subscribe/Menu/Burgers"  element={<Burger/>} />
+              <Route path="/Subscribe/Menu/Fries" element={<Fries />} />
+              <Route path="/Subscribe/Menu/Drinks" element={<Drinks />} />
+              <Route path="/Subscribe/Menu/Desserts" element={<Desserts />} />
+              <Route path="/Subscribe/Menu/KidsMeals" element={<KidsMeals />} />
+              <Route path="/Subscribe/Menu/Salads" element={<Salads />} />
+              <Route path="/Subscribe/Menu/Sauces" element={<Sauces />} />
+              <Route path="/Subscribe/Menu/Sides" element={<Sides />} />
+              <Route path="/Subscribe/Menu/Menus" element={<Menus/>} />
+              <Route path="/Subscribe/Menu/burgers/Receive" element={<Receive/>} />
+            </Routes>
+          </Context>
         </UsersContext>
+        </ProfilContext>
+        </PhotossContext>
       </Router>
     </>
   );
@@ -54,6 +63,7 @@ function App() {
 function Card() {
   return (
     <>
+      <Profil/>
       <div>
         <Navbar />
       </div>

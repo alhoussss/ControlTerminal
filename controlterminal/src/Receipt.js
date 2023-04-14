@@ -5,6 +5,7 @@ import { UserContext } from "./UserContext";
 import Navbar from "./Bootstrap/navbar";
 
 function Receive() {
+    
     const valeur = React.useContext(NewContext);
     const user = React.useContext(UserContext)
     return (
