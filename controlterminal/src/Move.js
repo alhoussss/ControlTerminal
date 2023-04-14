@@ -1,5 +1,5 @@
 import React from "react";
-import "./Move.css";
+import "./CssFiles/Move.css";
 
 function Move(){
     return(

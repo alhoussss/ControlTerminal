@@ -3,10 +3,12 @@ import "../src/CssFiles/Receive.css";
 import { NewContext } from "./Context";
 import { UserContext } from "./UserContext";
 import Navbar from "./Bootstrap/navbar";
+import { PriceContext } from "./Pricecontext";
 
 function Receive() {
     
     const valeur = React.useContext(NewContext);
+    const totalValeur = React.useContext(PriceContext);
     const user = React.useContext(UserContext)
     return (
         <>
@@ -19,7 +21,8 @@ function Receive() {
             <div className="cardR">
                 <h4>
                     {valeur.Valeur}  
-                </h4>
+                    Total: {totalValeur.TotalPrice}$ 
+                </h4> 
             </div>
         </>
     );

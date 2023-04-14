@@ -1,4 +1,4 @@
-import "./App.css";
+import "./CssFiles/App.css";
 import Accueil from "./Accueil";
 import Navbar from "./Bootstrap/navbar";
 import Menu from "./menu";
@@ -22,6 +22,7 @@ import Profil from "./Profil";
 import ProfilContext  from "./Profilcontext";
 import Photos from "./Users";
 import PhotossContext from "./Photocontext";
+import PriceContext  from "./Pricecontext";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Router>
         <PhotossContext>
         <ProfilContext>
+          <PriceContext>
         <UsersContext>
           <Context>
             <Routes>
@@ -53,6 +55,7 @@ function App() {
             </Routes>
           </Context>
         </UsersContext>
+        </PriceContext>
         </ProfilContext>
         </PhotossContext>
       </Router>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../CssFiles/App.css";
 import Burger from "./Articles";
 
 function Drinks() {

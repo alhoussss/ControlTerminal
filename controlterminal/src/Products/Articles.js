@@ -1,15 +1,17 @@
 import React, { createContext, useState } from "react";
 import Navbar from "../Bootstrap/navbar";
-import "../App.css";
+import "../CssFiles/App.css";
 import "../Receipt";
 import { useNavigate } from "react-router-dom";
 import { NewContext } from "../Context";
 import Move from "../Move";
+import { PriceContext } from "../Pricecontext";
 
 
 function Burger({ items }){
 
   const valeur = React.useContext(NewContext);
+  const totalvaleur = React.useContext(PriceContext)
   const [clickedItems, setClickedItems] = useState([])
   const navigate = useNavigate()
 
@@ -84,8 +86,8 @@ function Burger({ items }){
                   <hr />
                   <h1 style={{ color: "white" }}>Total: {getTotalPrice().toFixed(2)}$</h1>
                 </div>
-                <button className="button3"onClick={() => {valeur.setValeur(clickedItems.map((list, index) => (<ul key={index}><li>{list}-{items.find(element => element.name === list).price}$</li></ul>)));navigate("/Subscribe/Menu/burgers/Receive")}}>Valider</button>
-                <button className="button3"onClick={() => {valeur.setValeur(clickedItems.map((list, index) => (<ul key={index}><li>{list}-{items.find(element => element.name === list).price}$</li></ul>)));navigate("/Subscribe/Menu")}}>Continuer</button>
+                <button className="button3"onClick={() => {valeur.setValeur(clickedItems.map((list, index) => (<ul key={index}><li>{list}-{items.find(element => element.name === list).price}$</li></ul>)));totalvaleur.setTotalPrice(getTotalPrice().toFixed(2));navigate("/Subscribe/Menu/burgers/Receive")}}>Valider</button>
+                <button className="button3"onClick={() => {valeur.setValeur(clickedItems.map((list, index) => (<ul key={index}><li>{list}-{items.find(element => element.name === list).price}$</li></ul>)));totalvaleur.setTotalPrice(getTotalPrice().toFixed(2));navigate("/Subscribe/Menu")}}>Continuer</button>
               </div>
               
       
